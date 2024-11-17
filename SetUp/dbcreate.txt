@@ -1,0 +1,11 @@
+//Run on the sql
+create database project
+//inside project
+CREATE TABLE question (id INT AUTO_INCREMENT PRIMARY KEY,ques TEXT, option_a VARCHAR(255), option_b VARCHAR(255), option_c VARCHAR(255), option_d VARCHAR(255), answer VARCHAR(255), subject VARCHAR(50), username VARCHAR(100));
+CREATE TABLE students(id VARCHAR(100) PRIMARY KEY, password VARCHAR(50) NOT NULL);
+CREATE TABLE admin (id VARCHAR(100) PRIMARY KEY, password VARCHAR(50) NOT NULL);
+CREATE TABLE MARKS(id INT AUTO_INCREMENT PRIMARY KEY, username VARCHAR(50), subject VARCHAR(50), score VARCHAR(50), admin VARCHAR(100));
+INSERT INTO admin VALUES("username", "password");
+
+
+
